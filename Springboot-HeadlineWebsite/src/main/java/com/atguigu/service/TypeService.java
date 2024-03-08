@@ -1,6 +1,7 @@
 package com.atguigu.service;
 
 import com.atguigu.pojo.Type;
+import com.atguigu.utils.Result;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,5 +10,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
 * @createDate 2024-03-06 18:49:05
 */
 public interface TypeService extends IService<Type> {
-
+    /**
+     * 查询所有类别的数据
+     * @return
+     */
+    Result finaAllTypes();
 }
